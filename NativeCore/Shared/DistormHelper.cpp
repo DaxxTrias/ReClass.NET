@@ -66,10 +66,10 @@ _CodeInfo CreateCodeInfo(const uint8_t* address, int length, const _OffsetType v
 	info.codeLen = length;
 	info.features = DF_NONE;
 
-#ifdef RECLASSNET64
-	info.dt = Decode64Bits;
-#else
+#ifdef RECLASSNET32
 	info.dt = Decode32Bits;
+#else
+	info.dt = Decode64Bits;
 #endif
 
 	return info;

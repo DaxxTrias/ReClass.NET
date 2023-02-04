@@ -56,20 +56,20 @@ namespace ReClassNET.Memory
 		public long LongValue;
 
 		public IntPtr IntPtr =>
-#if RECLASSNET64
-			(IntPtr)LongValue;
-#else
+#if RECLASSNET32
 			unchecked((IntPtr)(int)LongValue);
+#else
+			(IntPtr)LongValue;
 #endif
 
 		[FieldOffset(0)]
 		public ulong ULongValue;
 
 		public UIntPtr UIntPtr =>
-#if RECLASSNET64
-			(UIntPtr)ULongValue;
-#else
+#if RECLASSNET32
 			unchecked((UIntPtr)(uint)ULongValue);
+#else
+			(UIntPtr)ULongValue;
 #endif
 
 		[FieldOffset(0)]
