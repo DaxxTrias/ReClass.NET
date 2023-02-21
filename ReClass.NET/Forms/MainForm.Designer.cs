@@ -1025,6 +1025,7 @@ namespace ReClassNET.Forms
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.Size = new System.Drawing.Size(1141, 22);
 			this.statusStrip.TabIndex = 1;
+			this.StatusStrip.BackColor = System.Drawing.Color.Gray; // personal theming
 			// 
 			// processInfoToolStripStatusLabel
 			// 
@@ -1050,6 +1051,7 @@ namespace ReClassNET.Forms
 			this.mainMenuStrip.Name = "mainMenuStrip";
 			this.mainMenuStrip.Size = new System.Drawing.Size(1141, 24);
 			this.mainMenuStrip.TabIndex = 2;
+			this.mainMenuStrip.BackColor = System.Drawing.Color.LightGray; // personal theming
 			// 
 			// fileToolStripMenuItem
 			// 

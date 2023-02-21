@@ -42,6 +42,8 @@ namespace ReClassNET.Controls
 			this.projectTreeView.ShowRootLines = false;
 			this.projectTreeView.Size = new System.Drawing.Size(150, 150);
 			this.projectTreeView.TabIndex = 0;
+			this.projectTreeView.BackColor = System.Drawing.Color.Black; // custom theming
+			this.projectTreeView.ForeColor = System.Drawing.Color.LawnGreen; // custom theming
 			this.projectTreeView.BeforeLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.projectTreeView_BeforeLabelEdit);
 			this.projectTreeView.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.projectTreeView_AfterLabelEdit);
 			this.projectTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.projectTreeView_AfterSelect);
